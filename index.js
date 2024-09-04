@@ -17,9 +17,11 @@ dotenv.config();
 const authRoute = require("./routes/authRoutes");
 const projectRoute = require("./routes/projectRoutes");
 const formRoute = require("./routes/formRoutes");
+const crawlerRoute = require("./routes/crawlerRoute");
 app.use("/api/auth", authRoute);
 app.use("/api/project", projectRoute);
 app.use("/api/form/", formRoute);
+app.use("/api", crawlerRoute);
 
 const PORT = process.env.PORT;
 console.log(PORT, "port");
