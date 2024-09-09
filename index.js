@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://translate.transloom.com"],
+    origin: ["https://translate.transloom.com","http://localhost:5173","https://transloom.com","http://localhost:3000"],
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     credentials: true,
   })
